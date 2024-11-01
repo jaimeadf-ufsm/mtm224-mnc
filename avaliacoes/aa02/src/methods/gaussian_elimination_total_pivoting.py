@@ -37,7 +37,7 @@ def gaussian_elimination_total_pivoting(A, b):
     section.add_title("ELIMINAÇÃO GAUSSIANA: PIVOTAMENTO TOTAL")
     section.add_matrix_block(matrix_block)
 
-    section.add_subtitle("RETROSUBSTITUIÇÃO")
+    section.add_subtitle("SOLUÇÃO $|$ RETROSUBSTITUIÇÃO")
 
     section.add_statement("$$")
     section.add_statement('\\;\\;\\;\\;'.join(

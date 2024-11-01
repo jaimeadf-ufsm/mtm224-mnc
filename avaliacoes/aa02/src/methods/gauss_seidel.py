@@ -47,7 +47,7 @@ def gauss_seidel(C, d, tolerance):
         e_table.add_row([str(k)] + list(map(format_number, ek)))
 
     section = Section()
-    section.add_title("MÉTODO DE GAUSS SEIDEL")
+    section.add_title("MÉTODO DE GAUSS-SEIDEL")
 
     section.add_statement("$$")
     section.add_statement(f"C = {format_matrix(C)}")

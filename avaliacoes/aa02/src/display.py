@@ -35,22 +35,6 @@ class Table:
         self.rows.append(row)
 
     def __str__(self):
-        # table = "$$\n"
-        # table += f"\\left("
-        # table += f"\\begin{{array}}{{{" ".join("c" * len(self.columns))}}}\n"
-
-        # table += f"{" & ".join(self.columns)} \\\\\n"
-
-        # for row in self.rows:
-        #     table += f"{" & ".join(row)} \\\\\n"
-
-        # table += "\\end{array}"
-        # table += f"\\right)"
-        # table += "$$\n"
-
-        # return table
-
-
         text = "\\begin{table}[htpb]\n"
         text += "\\centering\n"
         
@@ -81,7 +65,7 @@ class MatrixBlock:
         self.matrices.append((matrix.copy(), variable))
     
     def __str__(self):
-        text = "\\begin{NiceMatrixBlock}[auto-columns-width]\n"
+        text = "\\begin{NiceMatrixBlock}\n"
         text += "\\begin{align*}\n"
 
         for matrix, variable in self.matrices:
