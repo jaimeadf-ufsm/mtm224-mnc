@@ -9,7 +9,6 @@ from methods.gauss_seidel import gauss_seidel
 DEFAULT_TOLERANCE = 1e-5
 
 def run_gaussian_elimination_partial_pivoting(args):
-    print(np.linalg.solve(args.A.astype(float), args.b.astype(float)))
     section = gaussian_elimination_partial_pivoting(
         args.A.astype(float),
         args.b.astype(float)
@@ -26,7 +25,6 @@ def run_gaussian_elimination_total_pivoting(args):
     print(section)
 
 def run_jacobi(args):
-    print(np.linalg.solve(args.C.astype(float), args.d.astype(float)))
     section = jacobi(
         args.C.astype(float),
         args.d.astype(float),
