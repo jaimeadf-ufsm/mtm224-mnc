@@ -85,7 +85,9 @@ def divided_differences(project, points, z):
     project.add_element("\\centering")
     project.add_element("\\caption*{Gráficos}")
 
-    for k in range(2, n, 2):
+    for i in range(1, n // 2):
+        k = i * 2
+
         fig, ax = plt.subplots()
 
         ax.plot(x, y, "ko")
@@ -99,7 +101,7 @@ def divided_differences(project, points, z):
             x_range,
             y_range,
             linestyle="solid",
-            color=COLORS[((k - 2) // 2) % len(COLORS)],
+            color=COLORS[(i - 1) % len(COLORS)],
             label=f"$y = P_{k}(x)$"
         )
         ax.legend()
