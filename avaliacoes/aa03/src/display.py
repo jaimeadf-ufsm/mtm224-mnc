@@ -4,7 +4,7 @@ def format_number(n):
     if n == np.inf:
         return "\\infty"
 
-    notation = f"{n:.10g}"
+    notation = f"{n:.6g}"
     pieces = notation.split("e")
 
     if len(pieces) >= 2:
@@ -26,7 +26,7 @@ class Project:
     def save(self, directory):
         document = "\\documentclass{article}\n"
         document += "\\usepackage[utf8]{inputenc}\n"
-        document += "\\usepackage[paperheight=18in,paperwidth=13in,margin=1in]{geometry}\n"
+        document += "\\usepackage[paperheight=15in,paperwidth=10in,margin=1in]{geometry}\n"
         document += "\\usepackage[all]{xy}\n"
         document += "\\usepackage{amsmath,amsthm,amssymb,color,latexsym}\n"
         document += "\\usepackage{geometry}\n"
