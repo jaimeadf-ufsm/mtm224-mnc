@@ -10,6 +10,8 @@ COLORS=["blue", "red", "orange", "green"]
 def divided_differences(project, points, z):
     n = points.shape[0]
 
+    points = points[np.argsort(np.abs(np.asarray(points[:,0]).flatten() - z))]
+
     x = np.asarray(points[:,0]).flatten()
     y = np.asarray(points[:,1]).flatten()
 
@@ -96,6 +98,9 @@ def divided_differences(project, points, z):
 
         ax.set_xlim(0, 2)
         ax.set_ylim(-1, 6)
+
+        ax.set_xlabel("$x$")
+        ax.set_ylabel("$y$")
 
         ax.plot(
             x_range,
