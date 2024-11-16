@@ -97,7 +97,7 @@ def divided_differences(project, points, z):
         y_range = pk(k, x_range)
 
         ax.set_xlim(0, 2)
-        ax.set_ylim(-1, 6)
+        ax.set_ylim(-1, 8)
 
         ax.set_xlabel("$x$")
         ax.set_ylabel("$y$")
