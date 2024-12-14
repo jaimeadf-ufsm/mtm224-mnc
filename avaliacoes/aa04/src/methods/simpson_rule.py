@@ -1,6 +1,6 @@
 import numpy as np
 
-def simpsons_rule(f, a, b, tolerance):
+def simpson_rule(f, a, b, tolerance):
     iterations = []
 
     k = 1
