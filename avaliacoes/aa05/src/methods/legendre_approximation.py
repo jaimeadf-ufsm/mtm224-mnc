@@ -24,7 +24,7 @@ def legendre_approximation(f, n):
         steps.append(step)
 
         if k > 0:
-            beta = sum([2 * a ** 2 / (2 * j + 1) for j in range(0, k + 1)])
+            beta = sum([2 * steps[j]["a"] ** 2 / (2 * j + 1) for j in range(0, k + 1)])
 
             step["EA"] = 2 * a ** 2 / (2 * k + 1)
             step["ER"] = step["EA"] / beta

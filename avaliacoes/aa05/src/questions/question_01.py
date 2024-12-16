@@ -18,8 +18,8 @@ def add_steps(project, table, polynomial_results):
         "$x_k^2$",
         "$x_k^3$",
         "$x_k^4$",
-        "$x_ky_k$",
-        "$x_k^2y_k$"
+        "$y_kx_k$",
+        "$y_kx_k^2$"
     )
 
     table.add_mid_rule()

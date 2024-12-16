@@ -76,6 +76,7 @@ def add_plots(project, f, approximation_functions, letter, color):
 
         ax.set_xlim(-1, 1)
         ax.set_ylim(-1, 2)
+        # ax.set_ylim(np.min(f_y_range), np.max(f_y_range))
 
         ax.set_xlabel("$x$")
         ax.set_ylabel("$y$")
